@@ -1,0 +1,73 @@
+body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #111;
+      overflow: hidden;
+      font-family: sans-serif;
+      color: #fff;
+    }
+
+    .game-container {
+      position: relative;
+      border: 2px solid #444;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .score-container,
+    .level-container {
+      position: absolute;
+      top: 10px;
+      font-size: 16px;
+      padding: 5px 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+
+    .score-container {
+      left: 10px;
+    }
+
+    .level-container {
+      right: 10px;
+    }
+
+    .start-screen-container,
+    .game-over-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border: 2px solid #555;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .start-screen-container h1,
+    .game-over-container h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    .start-screen-container button,
+    .game-over-container button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      cursor: pointer;
+      font-size: 1.1em;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-screen-container button:hover,
+    .game-over-container button:hover {
+      background-color: #45a049;
+    }
